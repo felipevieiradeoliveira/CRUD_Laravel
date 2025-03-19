@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
+    <style>
+        body {
+            margin:0;
+            padding: 0;
+            background-color:rgb(255, 225, 202)
+        }
+        form {
+            display:flex;
+            justify-content:center;
+            width:50%;
+            background-color:red;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Produtos</h1>
-
+        <div class="box">
     <form action="/cadastrar-produto" method="POST">
+    <h1>Produtos</h1>
 
     @csrf
 
@@ -26,5 +40,6 @@
 
     <button>Cadastrar</button>
     </form>
+    </div>
 </body>
 </html>
